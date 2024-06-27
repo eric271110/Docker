@@ -1,30 +1,34 @@
-# Docker pratice
-# FROM -> Set the basic image 
+# Docker practice
+### Purpose
+Try make Dockerfile to excute shell script, and need to use container. 
 
-# COPY ->Copy file to path which container assigned, and container can read  this file. 
+### Dockerfile Command
+FROM -> Set the basic image 
 
-# RUN ->When build image, run command 
+COPY ->Copy file to path which container assigned, and container can read  this file. 
 
-# CMD ->When build container, run command. 
+RUN ->When build image, run command 
 
-# Docker 
+CMD ->When build container, run command. 
 
-# docker build -t eric/test .  ->build image 
+### Docker Command
 
-# docker run eric/test ->run new command in new container. 
+docker build -t NameAndOptionalTag .  ->build image 
 
-# docker images ->print images 
+docker run ImageNameAndOptionalTag ->run new command in new container. 
 
-# docker ps –a ->print all container 
+docker images ->print images 
 
-# docker rmi --force eric/test -> remove image 
+docker ps –a ->print all container 
 
-# docker rm container_id_or_name ->remove comtainer 
+docker rmi --force ImageNameAndOptionalTag -> remove image 
 
-# docker start CONTAINER ID ->start container 
+docker rm container_id_or_name ->remove comtainer 
 
-# docker restart CONTAINER ID ->restart container 
+docker start CONTAINER ID ->start container 
 
-# docker stop CONTAINER ID ->stop container 
+docker restart CONTAINER ID ->restart container 
 
-# docker update CONTAINER ID ->update container parameter 
+docker stop CONTAINER ID ->stop container 
+
+docker update CONTAINER ID ->update container parameter 
